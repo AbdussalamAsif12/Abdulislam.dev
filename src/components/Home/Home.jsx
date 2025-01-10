@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../Button/Button";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
@@ -34,42 +34,67 @@ const Home = () => {
         </div>
 
         <div className="flex space-x-4 w-96 h-20 mb-20 mt-5 relative z-10">
-          <Button
-            bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
-            textColor="text-white"
-            width="w-28"
-            height="h-12"
-            icon={FaGithub}
-          />
+          <a
+            href="https://github.com/AbdussalamAsif12/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
+              textColor="text-white"
+              width="w-12"
+              height="h-12"
+              icon={FaGithub}
+            />
+          </a>
 
-          <Button
-            bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
-            textColor="text-white"
-            width="w-28"
-            height="h-12"
-            icon={FaLinkedin}
-          />
-          <Button
-            bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
-            textColor="text-white"
-            width="w-28"
-            height="h-12"
-            icon={FaXTwitter}
-          />
-          <Button
-            title="About"
-            bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
-            textColor="text-white"
-            width="w-52"
-            height="h-12"
-          />
-          <Button
-            title="Contact"
-            bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
-            textColor="text-white"
-            width="w-52"
-            height="h-12"
-          />
+          {/* LinkedIn Button - External Link */}
+          <a
+            href="https://www.linkedin.com/in/abdulislam-asif-300925279/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
+              textColor="text-white"
+              width="w-12"
+              height="h-12"
+              icon={FaLinkedin}
+            />
+          </a>
+
+          {/* Twitter Button - External Link */}
+          <a
+            href="https://x.com/Abdulislam_12"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
+              textColor="text-white"
+              width="w-12"
+              height="h-12"
+              icon={FaXTwitter}
+            />
+          </a>
+          <Link to="/about">
+            <Button
+              title="About"
+              bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
+              textColor="text-white"
+              width="w-28"
+              height="h-12"
+            />
+          </Link>
+          <Link to="/contact">
+            <Button
+              title="Contact"
+              bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
+              textColor="text-white"
+              width="w-28"
+              height="h-12"
+            />
+          </Link>
         </div>
       </div>
     </>
