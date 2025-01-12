@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import Profile from "../Profile/Profile";
 
 const About = () => {
   return (
@@ -59,17 +60,18 @@ const About = () => {
             Some of John’s clients and accomplishments are listed below. CV
             available upon request.
           </p>
-            <Link to="/contact" className="inline-block">
-              <Button
-                title="Contact"
-                bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
-                textColor="text-white"
-                width="w-28"
-                height="h-12"
-              />
-            </Link>
+          <Link to="/contact" className="inline-block">
+            <Button
+              title="Contact"
+              bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
+              textColor="text-white"
+              width="w-28"
+              height="h-12"
+            />
+          </Link>
         </div>
       </div>
+      <Profile />
     </>
   );
 };
