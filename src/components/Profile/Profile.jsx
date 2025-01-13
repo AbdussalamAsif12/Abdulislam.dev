@@ -9,44 +9,44 @@ import {
   FaCar,
 } from "react-icons/fa";
 import { SiExpress, SiTinder } from "react-icons/si";
-
+import { RiTailwindCssFill } from "react-icons/ri";
 const PortfolioSkillsProjects = () => {
   // Skills and Projects data as arrays of objects
   const skills = [
     {
       name: "HTML",
       percentage: 80,
-      icon: <FaHtml5 className="mr-2 text-xl text-orange-600" />,
+      icon: <FaHtml5 className="mr-2 text-2xl text-orange-600" />,
     },
     {
       name: "Tailwind",
       percentage: 65,
-      icon: <FaCss3Alt className="mr-2 text-xl text-blue-600" />,
+      icon: <RiTailwindCssFill className="mr-2 text-2xl text-blue-600" />,
     },
     {
       name: "JavaScript",
       percentage: 70,
-      icon: <FaJsSquare className="mr-2 text-xl text-yellow-600" />,
+      icon: <FaJsSquare className="mr-2 text-2xl text-yellow-600" />,
     },
     {
       name: "Node.js",
       percentage: 70,
-      icon: <FaNodeJs className="mr-2 text-xl text-green-600" />,
+      icon: <FaNodeJs className="mr-2 text-2xl text-green-600" />,
     },
     {
       name: "React.js",
       percentage: 65,
-      icon: <FaReact className="mr-2 text-xl text-cyan-500" />,
+      icon: <FaReact className="mr-2 text-2xl text-cyan-500" />,
     },
     {
       name: "MongoDB",
       percentage: 70,
-      icon: <FaDatabase className="mr-2 text-xl text-green-500" />,
+      icon: <FaDatabase className="mr-2 text-2xl text-green-500" />,
     },
     {
       name: "Express.js",
       percentage: 70,
-      icon: <SiExpress className="mr-2 text-xl text-green-600" />,
+      icon: <SiExpress className="mr-2 text-2xl text-green-600" />,
     },
   ];
 
