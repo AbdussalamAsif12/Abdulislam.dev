@@ -3,75 +3,90 @@ import Navbar from "../Navbar/Navbar";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import Profile from "../Profile/Profile";
-
+import DynamicTitle from "../DynamicTitle/DynamicTitle ";
+import "./About.css"
 const About = () => {
   return (
     <>
+      <DynamicTitle title="About" />
       <Navbar />
       <hr />
-      <div className="flex flex-col md:flex-row items-center md:items-start p-6 md:p-12 space-y-6 md:space-y-0 md:space-x-8">
+      <div
+        className="flex flex-col md:flex-row items-center md:items-start p-6 md:p-12 space-y-6 md:space-y-0 md:space-x-8"
+        style={{
+          background: "linear-gradient(120deg, #f8f9fa, #ffffff)",
+          minHeight: "100vh",
+        }}
+      >
         {/* Image Section */}
-        <div className="relative w-full md:w-1/2 flex justify-center lg:h-[450px] md:h-[300px]">
+        <div className="relative w-full md:w-1/2 flex justify-center lg:h-[450px] md:h-[300px] overflow-hidden">
           <img
-            src="/images/pic_31.webp" // Replace with your image URL
+            src="/images/pic_2.webp"
             alt="Profile"
-            className="rounded-md shadow-lg w-full h-full object-cover"
+            className="rounded-md shadow-lg w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
           />
-          <div className="absolute inset-0 bg-black opacity-30 rounded-md"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-20 rounded-md"></div>
         </div>
 
         {/* Text Section */}
-        <div className="w-full md:w-1/2">
-          <p
-            className="mb-4 text-xl md:text-xl font-extrabold font-Google_Chivo"
-            style={{ color: "#333333" }}
-          >
-            Hi! I am{" "}
-            <span className="font-Google_Delius text-red-600">Abdulislam</span>{" "}
-            a passionate MERN Stack developer. I specialize in creating
-            responsive user interfaces using Tailwind CSS and Bootstrap, while
-            bringing dynamic functionality to life with React.js and JavaScript.
-            From form validation to API integration, I craft seamless,
-            interactive user experiences that adapt across devices and deliver
-            smooth, engaging browsing experiences.
+        <div className="w-full md:w-1/2 space-y-4">
+          <h1 className="text-4xl font-bold text-gray-800 ">
+            Hi! I'm{" "}
+            <span className="text-red-500 font-Google_Delius">Abdulislam.</span>
+          </h1>
+
+          <p className="text-lg md:text-lg font-medium text-gray-700 leading-relaxed text-justify">
+            I am a MERN stack developer currently pursuing a Bachelor's degree
+            in Computer Science from Virtual University. With a keen interest in
+            full-stack development, I focus on building modern, scalable, and
+            efficient web applications.
           </p>
-          <p
-            className="mb-4 text-lg md:text-xl leading-relaxed font-extrabold font-Google_Chivo"
-            style={{ color: "#333333" }}
-          >
-            In Backend development, I excel in: Authentication and
-            Authorization: Implementing secure access control mechanisms. DBMS:
-            Efficiently managing and storing data using MongoDB. API
-            Development: Building RESTful APIs with Node.js and Express.js.
-            WebSockets: Creating real-time updates and interactive experiences
-            with Socket.io.
+          <p className="text-lg md:text-lg font-medium text-gray-700 leading-relaxed text-justify">
+            As a Frontend{" "}
+            <span className="text-xl text-blue-700 font-Google_Chivo ">
+              React.js
+            </span>{" "}
+            developer, I specialize in building responsive and interactive user
+            interfaces using Tailwind CSS and Bootstrap. I develop dynamic web
+            applications by utilizing React’s component-based architecture, and
+            I am skilled in API integration to enhance the functionality of the
+            applications. My goal is to deliver seamless user experiences.
           </p>
-          <p
-            className="mb-4 text-lg md:text-xl leading-relaxed font-extrabold font-Google_Chivo"
-            style={{ color: "#333333" }}
-          >
-            I'm looking for an internship where I can further develop my backend
-            expertise, contribute to meaningful work, and continue to grow as a
-            full-stack developer.
+          <p className="text-lg md:text-lg font-medium text-gray-700 leading-relaxed text-justify">
+            As a Backend Node.js developer, I focus on building scalable and
+            efficient server-side applications using{" "}
+            <span className="text-xl text-green-700 font-Google_Chivo ">
+              Node.js
+            </span>{" "}
+            and Express.js. I design and implement RESTful APIs, manage database
+            interactions with MongoDB, and ensure smooth data flow between the
+            client and server. My emphasis is on creating secure,
+            high-performance back-end services that support modern web
+            applications while optimizing for speed and reliability.
           </p>
-          <br />
-          <p
-            className="text-lg md:text-xl leading-relaxed mb-10 font-extrabold font-Google_Chivo"
-            style={{ color: "#333333" }}
-          >
-            Hover over 'Skills' to view an overview, and click on 'Projects' to
-            explore them.
-            <a href="/files/MY_CV.pdf" className="text-red-600" download>
+          <p className="text-lg md:text-lg font-medium text-gray-700">
+            Hover over <span className="text-red-500">Skills</span> for an
+            overview, and click on{" "}
+            <span className="text-red-500">Projects</span> to explore them.{" "}
+            <br />
+            If you want to know more,{" "}
+            <a
+              href="/files/MY_CV.pdf"
+              className="text-red-500 underline hover:text-red-600"
+              download
+            >
               Download CV
             </a>
           </p>
+
           <Link to="/contact" className="inline-block">
             <Button
               title="Contact"
-              bgColor="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-600 hover:to-red-700"
+              bgColor="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600"
               textColor="text-white"
-              width="w-28"
+              width="w-32"
               height="h-12"
+              className="font-semibold shadow-md transform transition-transform duration-300 hover:scale-105"
             />
           </Link>
         </div>

@@ -3,19 +3,12 @@ import Button from "../Button/Button";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import "./Home.css"
 const Home = () => {
   return (
     <>
       <div
-        className="relative flex flex-col justify-end px-16"
-        style={{
-          backgroundImage: "url(/images/pic_1.webp)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          height: "100vh", // Ensure it spans the full viewport height
-          width: "100vw", // Ensure it spans the full viewport width
-        }}
+        className="relative flex flex-col justify-end px-16 background-image"
       >
         {/* Dark overlay on left and right */}
         <div className="absolute inset-0 bg-black opacity-70"></div>

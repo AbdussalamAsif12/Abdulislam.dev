@@ -1,0 +1,22 @@
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+  }
+  
+  /* Customize the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #f97316, #ef4444); /* Gradient from orange to red */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Customize the scrollbar when hovered */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, #f97316, #ef4444); /* Gradient stays on hover */
+  }
+  
+  /* Customize the scrollbar track (optional) */
+  ::-webkit-scrollbar-track {
+    background: #f3f4f6; /* Light background for the track */
+    border-radius: 10px;
+  }
+  

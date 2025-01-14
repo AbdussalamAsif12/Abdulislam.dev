@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Button from "../Button/Button";
 import Navbar from "../Navbar/Navbar";
 import Heading from "../Heading/Heading";
-
+import DynamicTitle from "../DynamicTitle/DynamicTitle ";
 const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -119,6 +119,7 @@ const Contact = () => {
 
   return (
     <>
+      <DynamicTitle title="Contact" />
       <Navbar />
       <hr />
       <div className="max-w-[900px] mx-auto px-4 md:px-8 font-sans">
