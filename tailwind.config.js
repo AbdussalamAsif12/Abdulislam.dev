@@ -11,6 +11,7 @@ export default {
         Google_Chivo : ["Chivo"],
         Google_Roboto : ["Robot"],
         Google_Open : ["Open Sans"],
+        Google_Sour : ["Sour Gummy"],
       }
     },
   },

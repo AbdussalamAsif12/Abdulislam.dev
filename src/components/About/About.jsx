@@ -23,42 +23,47 @@ const About = () => {
         {/* Text Section */}
         <div className="w-full md:w-1/2">
           <p
-            className="mb-4 text-lg md:text-xl leading-relaxed font-extrabold font-Google_Chivo"
+            className="mb-4 text-xl md:text-xl font-extrabold font-Google_Chivo"
             style={{ color: "#333333" }}
           >
-            John Mauriello is an intensely driven industrial designer and
-            adjunct professor of industrial design at California College of the
-            Arts. He creates best-selling designs that look great, function
-            intuitively, and meet real-world constraints around deadlines and
-            cost.
+            Hi! I am{" "}
+            <span className="font-Google_Delius text-red-600">Abdulislam</span>{" "}
+            a passionate MERN Stack developer. I specialize in creating
+            responsive user interfaces using Tailwind CSS and Bootstrap, while
+            bringing dynamic functionality to life with React.js and JavaScript.
+            From form validation to API integration, I craft seamless,
+            interactive user experiences that adapt across devices and deliver
+            smooth, engaging browsing experiences.
           </p>
           <p
             className="mb-4 text-lg md:text-xl leading-relaxed font-extrabold font-Google_Chivo"
             style={{ color: "#333333" }}
           >
-            As the founder of Design Theory, John creates videos about design,
-            amassing nearly 500,000 YouTube followers and over 20 million views.
-            He has demonstrated his ability to deliver game-changing design work
-            for the most recognizable brands on the planet.
+            In Backend development, I excel in: Authentication and
+            Authorization: Implementing secure access control mechanisms. DBMS:
+            Efficiently managing and storing data using MongoDB. API
+            Development: Building RESTful APIs with Node.js and Express.js.
+            WebSockets: Creating real-time updates and interactive experiences
+            with Socket.io.
           </p>
           <p
             className="mb-4 text-lg md:text-xl leading-relaxed font-extrabold font-Google_Chivo"
             style={{ color: "#333333" }}
           >
-            John's design philosophy is simple: Tools and products should be an
-            extension of the body, requiring no conscious articulation or
-            thought. These tools must also inspire us through their carefully
-            crafted forms and surfaces. John's passion is to give people the
-            intuitive and beautiful physical objects they need in order to
-            achieve mastery in whatever activity they engage in.
+            I'm looking for an internship where I can further develop my backend
+            expertise, contribute to meaningful work, and continue to grow as a
+            full-stack developer.
           </p>
           <br />
           <p
             className="text-lg md:text-xl leading-relaxed mb-10 font-extrabold font-Google_Chivo"
             style={{ color: "#333333" }}
           >
-            Some of John’s clients and accomplishments are listed below. CV
-            available upon request.
+            Hover over 'Skills' to view an overview, and click on 'Projects' to
+            explore them.
+            <a href="/files/MY_CV.pdf" className="text-red-600" download>
+              Download CV
+            </a>
           </p>
           <Link to="/contact" className="inline-block">
             <Button
