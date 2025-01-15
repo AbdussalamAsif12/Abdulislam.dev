@@ -69,6 +69,7 @@ const About = () => {
             overview, and click on{" "}
             <span className="text-red-500">Projects</span> to explore them.{" "}
             <br />
+            <br />
             If you want to know more,{" "}
             <a
               href="/files/MY_CV.pdf"
