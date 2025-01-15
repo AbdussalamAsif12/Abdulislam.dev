@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import Profile from "../Profile/Profile";
 import DynamicTitle from "../DynamicTitle/DynamicTitle ";
-import "./About.css"
+import "./About.css";
 const About = () => {
   return (
     <>
@@ -53,16 +53,17 @@ const About = () => {
             applications. My goal is to deliver seamless user experiences.
           </p>
           <p className="text-lg md:text-lg font-medium text-gray-700 leading-relaxed text-justify">
-            As a Backend Node.js developer, I focus on building scalable and
-            efficient server-side applications using{" "}
+            As a Backend{" "}
             <span className="text-xl text-green-700 font-Google_Chivo ">
               Node.js
             </span>{" "}
-            and Express.js. I design and implement RESTful APIs, manage database
-            interactions with MongoDB, and ensure smooth data flow between the
-            client and server. My emphasis is on creating secure,
-            high-performance back-end services that support modern web
-            applications while optimizing for speed and reliability.
+            developer, I focus on building scalable and efficient
+            server-side applications using Node.js and Express.js. I design and
+            implement RESTful APIs, manage database interactions with MongoDB,
+            and ensure smooth data flow between the client and server. My
+            emphasis is on creating secure, high-performance back-end services
+            that support modern web applications while optimizing for speed and
+            reliability.
           </p>
           <p className="text-lg md:text-lg font-medium text-gray-700">
             Hover over <span className="text-red-500">Skills</span> for an
