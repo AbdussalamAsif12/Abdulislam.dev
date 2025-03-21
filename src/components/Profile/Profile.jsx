@@ -6,7 +6,7 @@ import {
   FaNodeJs,
   FaReact,
   FaDatabase,
-  FaCar,
+  FaShoppingBag
 } from "react-icons/fa";
 import { SiExpress, SiTinder } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -52,10 +52,10 @@ const PortfolioSkillsProjects = () => {
 
   const projects = [
     {
-      name: "Xber - Online Cab Service",
-      link: "https://uber.com",
-      description: "Online Cab Service that connects riders with drivers.",
-      icon: <FaCar className="mr-2 text-xl text-black" />,
+      name: "Shopit - Ecommerce Store",
+      link: "https://Shopit.com",
+      description: "Best Ecommerce Store.",
+      icon: <FaShoppingBag className="mr-2 text-xl text-black" />,
     },
     {
       name: "DevTinder - Find BestDev",
